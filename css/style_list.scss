@@ -6,14 +6,16 @@ $gray3: #b0b0b0;
 $red1:  #9d1a2d;
 $brown: #887f69;
 
-html {
+body {
   background-color: $gray1;
+  margin: 10px;
 }
 @media (min-width: 768px) {
-    html {
+    body {
       background-color: $gray1;
       margin-right: 100px;
       margin-left: 100px;
+      max-width: 1000px;
     }
 }
 
@@ -106,7 +108,7 @@ header {
   .flexbox{
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-content: space-between;
   }
   .item-box {
@@ -117,7 +119,7 @@ header {
   }
   @media (max-width: 767px) { 
     .item-box {
-     width: 42.3%;
+     width: 42.6%;
     }
   }
   .items {
@@ -177,20 +179,20 @@ header {
   .flexbox{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-content: flex-start;
   }
   .guide-box {
     text-align: left;
     padding: 10px;
     margin: 1px;
-    width: 44%;
+    width: 44.3%;
     background-color: #fff;
     margin-bottom: 2px;
   }
   @media (max-width: 767px) { 
     .guide-box {
-      width: 87%;
+      width: 100%;
     }
   }
   .delivery-img {
@@ -214,47 +216,54 @@ header {
 
 @media (min-width: 768px) {
   .search {
-    position: relative;
     background-color: #fff;
     padding: 20px;
     padding-bottom: 30px;
-    #keyword {
-      width: 70%;
-      background: $gray2;
-      padding: 8px;
-      padding-left: 20px;
-      border: none;
-    }
-    #btn {
-      position: absolute;
-      background: $gray2;
-      padding: 8px;
-      padding-bottom: 7px;
+    .search-box {
+      background-color: $gray2;
+      height: 31px;
+      #keyword {
+        width: 70%;
+        background-color: $gray2;
+        padding: 8px; 
+        padding-left: 20px;
+        border: none;
+        float: left;
+      }
+      #btn {
+        float: right;
+        background-color: $gray2;
+        padding: 8px;
+        padding-bottom: 7px;
+      }
     }
   }
 }
 @media (max-width: 767px) {
   .search {
-    position: relative;
     background-color: #fff;
-    margin: 10px;
     margin-top: 10px;
     padding: 30px;
     .search-logo {
       display: none;
     }
-    #keyword {
-      width: 86%;
-      background: $gray2;
-      padding: 8px;
-      padding-left: 20px;
-      border: none;
-    }
-    #btn {
-      position: absolute;
-      background: $gray2;
-      padding: 8px;
-      padding-bottom: 7px;
+    .search-box {
+      background-color: $gray2;
+      height: 31px;
+      #keyword {
+        width: 86%;
+        background-color: $gray2;
+        padding: 8px;
+        padding-left: 20px;
+        border: none;
+        float: left;
+      }
+      #btn {
+        float: right;
+        background-color: $gray2;
+        padding: 8px;
+        padding-bottom: 7px;
+      }
     }
   }
 }
@@ -352,6 +361,7 @@ header {
 h1 {
   text-align: left;
   font-size: 12px;
+  font-weight: bold;
   color: #000;
   margin: 0;
   padding-bottom: 10px;

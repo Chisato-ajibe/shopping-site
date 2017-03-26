@@ -1,11 +1,13 @@
-html {
-  background-color: #f9f8f6; }
+body {
+  background-color: #f9f8f6;
+  margin: 10px; }
 
 @media (min-width: 768px) {
-  html {
+  body {
     background-color: #f9f8f6;
     margin-right: 100px;
-    margin-left: 100px; } }
+    margin-left: 100px;
+    max-width: 1000px; } }
 header .sp-head {
   margin-top: 20px;
   text-align: center; }
@@ -69,7 +71,7 @@ header .menu-list {
   .item .flexbox {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-content: space-between; }
   .item .item-box {
     margin: 1px;
@@ -78,7 +80,7 @@ header .menu-list {
     background-color: #fff; }
   @media (max-width: 767px) {
     .item .item-box {
-      width: 42.3%; } }
+      width: 42.6%; } }
   .item .items {
     width: 100%;
     height: auto; }
@@ -99,20 +101,18 @@ header .menu-list {
   .guide .flexbox {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-content: flex-start; }
   .guide .guide-box {
     text-align: left;
     padding: 10px;
     margin: 1px;
-    width: 44%;
+    width: 44.3%;
     background-color: #fff;
     margin-bottom: 2px; }
   @media (max-width: 767px) {
     .guide .guide-box {
-      width: 87%; } }
-  .guide .delivery-img {
-    padding-bottom: 10px; }
+      width: 100%; } }
   .guide .cards-img {
     max-width: 100%;
     height: auto;
@@ -126,41 +126,46 @@ header .menu-list {
     padding: 0; } }
 @media (min-width: 768px) {
   .search {
-    position: relative;
     background-color: #fff;
     padding: 20px;
     padding-bottom: 30px; }
-    .search #keyword {
-      width: 70%;
-      background: #e2ddd4;
-      padding: 8px;
-      padding-left: 20px;
-      border: none; }
-    .search #btn {
-      position: absolute;
-      background: #e2ddd4;
-      padding: 8px;
-      padding-bottom: 7px; } }
+    .search .search-box {
+      background-color: #e2ddd4;
+      height: 31px; }
+      .search .search-box #keyword {
+        width: 70%;
+        background-color: #e2ddd4;
+        padding: 8px;
+        padding-left: 20px;
+        border: none;
+        float: left; }
+      .search .search-box #btn {
+        float: right;
+        background-color: #e2ddd4;
+        padding: 8px;
+        padding-bottom: 7px; } }
 @media (max-width: 767px) {
   .search {
-    position: relative;
     background-color: #fff;
-    margin: 10px;
     margin-top: 10px;
     padding: 30px; }
     .search .search-logo {
       display: none; }
-    .search #keyword {
-      width: 86%;
-      background: #e2ddd4;
-      padding: 8px;
-      padding-left: 20px;
-      border: none; }
-    .search #btn {
-      position: absolute;
-      background: #e2ddd4;
-      padding: 8px;
-      padding-bottom: 7px; } }
+    .search .search-box {
+      background-color: #e2ddd4;
+      height: 31px; }
+      .search .search-box #keyword {
+        width: 86%;
+        background-color: #e2ddd4;
+        padding: 8px;
+        padding-left: 20px;
+        border: none;
+        float: left; }
+      .search .search-box #btn {
+        float: right;
+        background-color: #e2ddd4;
+        padding: 8px;
+        padding-bottom: 7px; } }
 #page-link {
   cursor: pointer;
   padding: 14px;
@@ -168,7 +173,8 @@ header .menu-list {
   background-color: #887f69;
   font-size: 12px;
   font-weight: bold;
-  color: #fff; }
+  color: #fff;
+  clear: both; }
   #page-link #arrow {
     float: right;
     height: auto; }
@@ -238,6 +244,7 @@ header .menu-list {
 h1 {
   text-align: left;
   font-size: 12px;
+  font-weight: bold;
   color: #000;
   margin: 0;
   padding-bottom: 10px; }
@@ -250,9 +257,12 @@ h2 {
   padding-bottom: 10px; }
 
 h3 {
-  font-size: 13px;
+  font-size: 12px;
+  font-weight: bold;
   color: #887f69;
-  margin: 0; }
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 5px; }
 
 h4 {
   background-color: #887f69;
