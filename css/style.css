@@ -1,45 +1,45 @@
 body {
-  background-color: #f9f8f6;
-  margin: 10px; }
+  background-color: #f9f8f6; }
 
-@media (min-width: 768px) {
-  body {
-    background-color: #f9f8f6;
-    margin-right: 100px;
-    margin-left: 100px;
-    max-width: 1000px; } }
-header .sp-head {
-  margin-top: 20px;
-  text-align: center; }
-  header .sp-head .top_logo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10px; }
-  header .sp-head .top_icon {
-    margin: 4px; }
-header .menu-list {
-  display: none;
-  width: 50%;
-  position: fixed;
-  right: 0;
-  z-index: 10;
-  background: #fff; }
-  header .menu-list ul {
-    list-style-type: none;
-    margin: 0px;
-    padding: 0px; }
-    header .menu-list ul li {
-      background-color: #fff;
-      padding: 14px;
-      margin-bottom: 2px;
-      font-size: 12px; }
+header {
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto; }
+  header .sp-head {
+    margin-top: 20px;
+    text-align: center; }
+    header .sp-head .top_logo {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 10px; }
+    header .sp-head .top_icon {
+      margin: 4px; }
+  header .menu-list {
+    display: none;
+    width: 50%;
+    position: fixed;
+    right: 0;
+    z-index: 10;
+    background: #fff; }
+    header .menu-list ul {
+      list-style-type: none;
+      margin: 0px;
+      padding: 0px; }
+      header .menu-list ul li {
+        background-color: #fff;
+        padding: 14px;
+        margin-bottom: 2px;
+        font-size: 12px; }
 
 @media (min-width: 768px) {
   header {
     background-color: #f9f8f6;
     padding-top: 20px;
-    padding-bottom: 10px; }
+    padding-bottom: 10px;
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto; }
     header .sp-head {
       display: none; }
     header .pc-head-icons {
@@ -49,9 +49,19 @@ header .menu-list {
 @media (max-width: 767px) {
   .pc-head {
     display: none; } }
+.content {
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto; }
+
+@media (min-width: 768px) {
+  .content {
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto; } }
 @media (min-width: 768px) {
   .main {
-    width: 70%;
+    width: 68%;
     float: left;
     margin: 0;
     padding: 0; } }
@@ -83,7 +93,8 @@ header .menu-list {
       width: 42.6%; } }
   .item .items {
     width: 100%;
-    height: auto; }
+    height: auto;
+    padding-bottom: 5px; }
 
 .guide {
   text-align: center; }
@@ -120,7 +131,7 @@ header .menu-list {
 
 @media (min-width: 768px) {
   .side-menu {
-    width: 28%;
+    width: 30%;
     float: right;
     margin: 0;
     padding: 0; } }
@@ -129,6 +140,8 @@ header .menu-list {
     background-color: #fff;
     padding: 20px;
     padding-bottom: 30px; }
+    .search .search-logo {
+      padding-bottom: 5px; }
     .search .search-box {
       background-color: #e2ddd4;
       height: 31px; }
@@ -244,21 +257,21 @@ header .menu-list {
 h1 {
   text-align: left;
   font-size: 12px;
-  font-weight: bold;
   color: #000;
   margin: 0;
   padding-bottom: 10px; }
 
 h2 {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: bold;
   color: #887f69;
   margin: 0px;
-  padding-bottom: 10px; }
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px; }
 
 h3 {
   font-size: 12px;
-  font-weight: bold;
   color: #887f69;
   margin: 0;
   margin-top: 10px;
@@ -289,7 +302,10 @@ a {
 
 footer {
   text-align: center;
-  clear: both; }
+  clear: both;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto; }
   @media (min-width: 768px) {
     footer .jump-top {
       text-align: right;
@@ -312,5 +328,11 @@ footer {
       text-align: center;
       font-size: 12px;
       color: #e2ddd4; }
+
+@media (min-width: 768px) {
+  footer {
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto; } }
 
 /*# sourceMappingURL=style.css.map */
