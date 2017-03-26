@@ -5,7 +5,7 @@ body {
   body {
     margin: 0; } }
 header {
-  max-width: 768px;
+  max-width: 940px;
   margin-left: auto;
   margin-right: auto; }
   header .sp-head {
@@ -50,7 +50,7 @@ header {
   .pc-head {
     display: none; } }
 .content {
-  max-width: 768px;
+  max-width: 940px;
   margin-left: auto;
   margin-right: auto; }
 
@@ -161,7 +161,8 @@ header {
     .main-item .cart-button-pc {
       width: 30%; }
       .main-item .cart-button-pc .quantity {
-        width: 100%; }
+        width: 100%;
+        margin: 0; }
     .main-item .cart-button-sp {
       display: none; }
     .main-item #pri {
@@ -171,9 +172,17 @@ header {
       font-size: 10px; }
     .main-item .quantity #input {
       margin-left: 50px;
-      width: 50px; }
+      width: 150px;
+      height: 40px; }
     .main-item .item-info {
-      margin-top: 30px; } }
+      margin-top: 30px; }
+    .main-item #hrB {
+      margin-top: 10px;
+      margin-bottom: 24px; }
+    .main-item #hrC {
+      width: 65%;
+      margin-left: 0;
+      text-align: left; } }
 @media (max-width: 767px) {
   .main-item .flexbox-item-name {
     display: flex;
@@ -190,6 +199,11 @@ header {
     margin-bottom: 30px; }
   .main-item .cart-button-pc {
     display: none; } }
+@media (min-width: 1024px) {
+  .main-item .quantity #input {
+    margin-left: 90px;
+    width: 150px;
+    height: 40px; } }
 .item {
   margin-right: 10px;
   margin-left: 10px;
@@ -436,24 +450,25 @@ h2 {
 
 h3 {
   margin: 0;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
   color: #887f69; }
 
 h4 {
   text-align: left;
   font-size: 12px;
-  font-weight: bold;
   color: #000;
   margin: 0;
   padding-bottom: 10px; }
 
 h5 {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: bold;
   color: #887f69;
   margin: 0px;
-  padding-bottom: 10px; }
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px; }
 
 h6 {
   font-size: 12px;
@@ -489,7 +504,7 @@ span {
   margin-bottom: 14px;
   font-size: 14px;
   font-weight: normal;
-  padding-top: 10px; }
+  padding-top: 20px; }
 
 #pri {
   color: #e80f66;
@@ -512,6 +527,13 @@ hr {
   border: none;
   color: #887f69; }
 
+#hrC {
+  height: 1px;
+  background-color: #e2ddd4;
+  border: none;
+  color: #e2ddd4;
+  clear: both; }
+
 a {
   text-decoration: none;
   color: #000; }
@@ -519,7 +541,7 @@ a {
 footer {
   text-align: center;
   clear: both;
-  max-width: 768px;
+  max-width: 940px;
   margin-left: auto;
   margin-right: auto; }
   @media (min-width: 768px) {

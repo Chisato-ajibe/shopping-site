@@ -37,7 +37,7 @@ header {
     background-color: #f9f8f6;
     padding-top: 20px;
     padding-bottom: 10px;
-    max-width: 768px;
+    max-width: 940px;
     margin-left: auto;
     margin-right: auto; }
     header .sp-head {
@@ -56,7 +56,7 @@ header {
 
 @media (min-width: 768px) {
   .content {
-    max-width: 768px;
+    max-width: 940px;
     margin-left: auto;
     margin-right: auto; } }
 @media (min-width: 768px) {
@@ -331,7 +331,7 @@ footer {
 
 @media (min-width: 768px) {
   footer {
-    max-width: 768px;
+    max-width: 940px;
     margin-left: auto;
     margin-right: auto; } }
 
