@@ -1,5 +1,6 @@
 body {
-  background-color: #f9f8f6; }
+  background-color: #f9f8f6;
+  margin-top: 10px; }
 
 header {
   max-width: 300px;
@@ -7,7 +8,8 @@ header {
   margin-right: auto; }
   header .sp-head {
     margin-top: 20px;
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 8px; }
     header .sp-head .top_logo {
       display: block;
       margin-left: auto;
@@ -35,17 +37,20 @@ header {
 @media (min-width: 768px) {
   header {
     background-color: #f9f8f6;
-    padding-top: 20px;
-    padding-bottom: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     max-width: 940px;
     margin-left: auto;
     margin-right: auto; }
+    header .pc-head {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-end; }
     header .sp-head {
       display: none; }
-    header .pc-head-icons {
-      text-align: right; }
-      header .pc-head-icons img {
-        padding-left: 12px; } }
+    header .pc-head-icons img {
+      padding-left: 12px; } }
 @media (max-width: 767px) {
   .pc-head {
     display: none; } }
@@ -61,7 +66,7 @@ header {
     margin-right: auto; } }
 @media (min-width: 768px) {
   .main {
-    width: 68%;
+    width: 73.5%;
     float: left;
     margin: 0;
     padding: 0; } }
@@ -157,7 +162,7 @@ header {
 
 @media (min-width: 768px) {
   .side-menu {
-    width: 30%;
+    width: 24%;
     float: right;
     margin: 0;
     padding: 0; } }

@@ -8,6 +8,7 @@ $brown: #887f69;
 
 body {
   background-color: $gray1;
+  margin-top: 10px;
 }
 
 header {
@@ -17,6 +18,7 @@ header {
   .sp-head {
     margin-top: 20px;
     text-align: center;
+    margin-bottom: 8px;
     .top_logo {
       display: block;
       margin-left: auto;
@@ -50,16 +52,21 @@ header {
 @media (min-width: 768px) {
   header {
     background-color: $gray1;
-    padding-top: 20px;
-    padding-bottom: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     max-width: 940px;
     margin-left:auto;
     margin-right:auto;
+    .pc-head {
+       display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    }
     .sp-head {
       display: none;
     }
     .pc-head-icons {
-      text-align: right;
       img {
         padding-left: 12px;
       }
@@ -85,10 +92,9 @@ header {
   }
 }
 
-
 @media (min-width: 768px) {
   .main {
-    width: 68%;  
+    width: 73.5%;  
     float: left;  
     margin: 0;
     padding: 0; 
@@ -218,7 +224,7 @@ header {
 
 @media (min-width: 768px) {
   .side-menu {
-    width: 30%;  
+    width: 24%;  
     float: right;  
     margin: 0;  
     padding: 0; 

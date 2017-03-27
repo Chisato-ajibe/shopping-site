@@ -6,23 +6,24 @@ $gray3: #b0b0b0;
 $red1:  #9d1a2d;
 $brown: #887f69;
 
+$baseFontFamily :"游ゴシック", YuGothic, "メイリオ",Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+
 body {
   background-color: $gray1;
-}
-
-@media (max-width: 767px) {
-  body {
-    margin: 0;
-  }
+  margin-top: 10px;
+  font-family:$baseFontFamily;
+  font-weight: bold;
+  line-height: 130%
 }
 
 header {
-  max-width: 940px;
+  max-width: 300px;
   margin-left:auto;
   margin-right:auto;
   .sp-head {
     margin-top: 20px;
     text-align: center;
+    margin-bottom: 8px;
     .top_logo {
       display: block;
       margin-left: auto;
@@ -56,13 +57,21 @@ header {
 @media (min-width: 768px) {
   header {
     background-color: $gray1;
-    padding-top: 20px;
-    padding-bottom: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    max-width: 940px;
+    margin-left:auto;
+    margin-right:auto;
+    .pc-head {
+       display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    }
     .sp-head {
       display: none;
     }
     .pc-head-icons {
-      text-align: right;
       img {
         padding-left: 12px;
       }
@@ -76,14 +85,21 @@ header {
 }
 
 .content {
-  max-width: 940px;
+  max-width: 300px;
   margin-left:auto;
   margin-right:auto;
+}
+@media (min-width: 768px) {
+  .content {
+    max-width: 940px;
+    margin-left:auto;
+    margin-right:auto;
+  }
 }
 
 @media (min-width: 768px) {
   .main {
-    width: 68%;  
+    width: 73.5%;  
     float: left;  
     margin: 0;
     padding: 0; 
@@ -404,7 +420,7 @@ header {
 
 @media (min-width: 768px) {
   .side-menu {
-    width: 30%;  
+    width: 24%;  
     float: right;  
     margin: 0;  
     padding: 0; 
@@ -416,20 +432,23 @@ header {
     background-color: #fff;
     padding: 20px;
     padding-bottom: 30px;
+    .search-logo {
+      padding-bottom: 10px;
+    }
     .search-box {
-      background-color: $gray2;
+      background-color: #eeeeee;
       height: 31px;
       #keyword {
         width: 70%;
-        background-color: $gray2;
+        background-color: #eeeeee;
         padding: 8px; 
-        padding-left: 20px;
+        padding-left: 15px;
         border: none;
         float: left;
       }
       #btn {
         float: right;
-        background-color: $gray2;
+        background-color: #eeeeee;
         padding: 8px;
         padding-bottom: 7px;
       }
@@ -440,18 +459,16 @@ header {
   .search {
     background-color: #fff;
     margin-top: 10px;
-    margin-right: 10px;
-    margin-left: 10px;
     padding: 30px;
     .search-logo {
       display: none;
     }
     .search-box {
-      background-color: $gray2;
+      background-color: #eeeeee;
       height: 31px;
       #keyword {
         width: 86%;
-        background-color: $gray2;
+        background-color: #eeeeee;
         padding: 8px;
         padding-left: 20px;
         border: none;
@@ -459,7 +476,7 @@ header {
       }
       #btn {
         float: right;
-        background-color: $gray2;
+        background-color: #eeeeee;
         padding: 8px;
         padding-bottom: 7px;
       }
@@ -676,8 +693,8 @@ span {
   margin: 0;
   margin-bottom: 14px;
   font-size: 14px;
-  font-weight: normal;
   padding-top: 20px;
+  line-height: 150%
 }
 
 #pri {
